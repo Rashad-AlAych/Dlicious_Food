@@ -1,6 +1,6 @@
 function home() 
 {
-    fetch('http://localhost:3000/Home').then
+    fetch('https://deliciousfood-app.herokuapp.com/Home').then
     (response => response.json()).then
     (json => json.Home.forEach(element => {
         
@@ -26,7 +26,7 @@ function home()
 
 function about() 
 {
-    fetch('http://localhost:3000/About').then
+    fetch('https://deliciousfood-app.herokuapp.com/About').then
     (response => response.json()).then
     (json => json.About.forEach(element => {
         
@@ -53,7 +53,7 @@ function menu()
     fooddiv.style.height = "auto";
 
 
-    fetch('http://localhost:3000/Menu').then
+    fetch('https://deliciousfood-app.herokuapp.com/Menu').then
     (response => response.json()).then
     (json => json.Menu.forEach(element => {
 
@@ -100,7 +100,7 @@ function menu()
    var subject = document.getElementById('subject').value;
    var message = document.getElementById('message').value;
 
-   fetch("http://localhost:3000/Contact",
+   fetch("https://deliciousfood-app.herokuapp.com/Contact",
 {
    headers: {
      'Accept': 'application/json',
